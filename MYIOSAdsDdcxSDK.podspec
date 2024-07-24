@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MYIOSAdsDdcxSDK'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of MYIOSAdsDdcxSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,6 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
   s.static_framework = true
-  s.source_files = 'MYIOSAdsDdcxSDK/Classes/**/*'
   s.resources = 'MYIOSAdsDdcxSDK/Resources/*.bundle'
   s.vendored_frameworks = 'MYIOSAdsDdcxSDK/Frameworks/*.framework'
   
