@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MYIOSAdsDdcxSDK'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of MYIOSAdsDdcxSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -27,21 +27,12 @@ TODO: Add long description of the pod here.
   s.author           = { 'shanghaimeiyue' => 'karl@edimob.com' }
   s.source           = { :git => 'https://github.com/shanghaimeiyue/MYIOSAdsDdcxSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  
-  #  s.source_files = 'MYIOSAdsDdcxSDK/Classes/**/*'
-  #  s.public_header_files = 'Pod/Classes/Headers/*.h'
-  #  s.resource_bundles = {
-  #      'MYIOSAdsSDK' => ['MYIOSAdsDdcxSDK/Resources/*.bundle']
-  #  }
 
   s.ios.deployment_target = '12.0'
   s.static_framework = true
   s.source_files = 'MYIOSAdsDdcxSDK/Classes/**/*'
   s.resources = 'MYIOSAdsDdcxSDK/Resources/*.bundle'
   s.vendored_frameworks = 'MYIOSAdsDdcxSDK/Frameworks/*.framework'
-  
-  s.frameworks = 'UIKit'
-  s.libraries = 'c'
   
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => ['-ObjC' , '-all_load', '-ld64'], 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   
