@@ -7,6 +7,7 @@
 //
 
 #import "MYViewController.h"
+#import <MYAdsFramework/MYAdsFramework.h>
 
 @interface MYViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"sdkVersion - %@",[MYAdsConfiguration.shareInstance sdkVersion]);
 }
 
 - (void)didReceiveMemoryWarning

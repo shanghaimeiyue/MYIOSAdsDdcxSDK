@@ -21,22 +21,27 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/zhulonghaigit/MYIOSAdsDdcxSDK'
+  s.homepage         = 'https://github.com/shanghaimeiyue/MYIOSAdsDdcxSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zhulonghaigit' => 'zhulonghaigit@163.com' }
-  s.source           = { :git => 'https://github.com/zhulonghaigit/MYIOSAdsDdcxSDK.git', :tag => s.version.to_s }
+  s.author           = { 'shanghaimeiyue' => 'karl@edimob.com' }
+  s.source           = { :git => 'https://github.com/shanghaimeiyue/MYIOSAdsDdcxSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '10.0'
-
+  s.ios.deployment_target = '12.0'
+  s.static_framework = true
   s.source_files = 'MYIOSAdsDdcxSDK/Classes/**/*'
+  s.resources = 'MYIOSAdsDdcxSDK/Resources/*.bundle'
+  s.vendored_frameworks = 'MYIOSAdsDdcxSDK/Frameworks/*.framework'
   
-  # s.resource_bundles = {
-  #   'MYIOSAdsDdcxSDK' => ['MYIOSAdsDdcxSDK/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => ['-ObjC' , '-all_load', '-ld64'], 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
+  
+  s.dependency 'Ads-Fusion-CN-Beta/BUAdSDK', '6.1.3.4'
+  s.dependency 'Ads-Fusion-CN-Beta/CSJMediation', '6.1.3.4'
+  s.dependency 'GDTMobSDK', '4.14.76'
+  s.dependency 'KSAdSDK', '3.3.65'
+  s.dependency 'WechatOpenSDK_UnPay'
+  s.dependency 'SDWebImage'
+  s.dependency 'Masonry'
+  
 end

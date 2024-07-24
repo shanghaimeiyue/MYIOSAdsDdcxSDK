@@ -59,12 +59,12 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		7165F29A87314254810A8719 /* Pods-MYIOSAdsDdcxSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYIOSAdsDdcxSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-MYIOSAdsDdcxSDK_Example/Pods-MYIOSAdsDdcxSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		72CB6281647B351DA9F466DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		72CB6281647B351DA9F466DB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9F1D9443E4EC201CAC2B129D /* MYIOSAdsDdcxSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MYIOSAdsDdcxSDK.podspec; path = ../MYIOSAdsDdcxSDK.podspec; sourceTree = "<group>"; };
+		9F1D9443E4EC201CAC2B129D /* MYIOSAdsDdcxSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MYIOSAdsDdcxSDK.podspec; path = ../MYIOSAdsDdcxSDK.podspec; sourceTree = "<group>"; };
 		B46D601CA4CEE7514BB07FCC /* Pods_MYIOSAdsDdcxSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MYIOSAdsDdcxSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B723293E53D7D5E62FD2C0E5 /* Pods-MYIOSAdsDdcxSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYIOSAdsDdcxSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-MYIOSAdsDdcxSDK_Example/Pods-MYIOSAdsDdcxSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CFBF997D135E8CC44F745C54 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		CFBF997D135E8CC44F745C54 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E208C56B55617D1474083928 /* Pods-MYIOSAdsDdcxSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYIOSAdsDdcxSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MYIOSAdsDdcxSDK_Tests/Pods-MYIOSAdsDdcxSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F9C0D0DE75AF50EBFFC2990D /* Pods-MYIOSAdsDdcxSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MYIOSAdsDdcxSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-MYIOSAdsDdcxSDK_Tests/Pods-MYIOSAdsDdcxSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +103,6 @@
 				E208C56B55617D1474083928 /* Pods-MYIOSAdsDdcxSDK_Tests.debug.xcconfig */,
 				F9C0D0DE75AF50EBFFC2990D /* Pods-MYIOSAdsDdcxSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,6 +208,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				B759D172625AEC3ADD9FA72E /* [CP] Embed Pods Frameworks */,
+				0DF35AA7212F250CF60C4000 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +249,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = zhulonghaigit;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 8UR33FSGUM;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -259,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -296,6 +300,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0DF35AA7212F250CF60C4000 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MYIOSAdsDdcxSDK_Example/Pods-MYIOSAdsDdcxSDK_Example-resources.sh",
+				"${PODS_ROOT}/Ads-Fusion-CN-Beta/SDK/CSJAdSDK.bundle",
+				"${PODS_ROOT}/../../MYIOSAdsDdcxSDK/Resources/MYAdsBundle.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CSJAdSDK.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MYAdsBundle.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MYIOSAdsDdcxSDK_Example/Pods-MYIOSAdsDdcxSDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		97905DD7C98B0C1487F5D53D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -325,11 +349,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MYIOSAdsDdcxSDK_Example/Pods-MYIOSAdsDdcxSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MYIOSAdsDdcxSDK/MYIOSAdsDdcxSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/KSAdSDK/KSAdSDK.framework/KSAdSDK",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MYIOSAdsDdcxSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KSAdSDK.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -519,9 +547,11 @@
 			baseConfigurationReference = B723293E53D7D5E62FD2C0E5 /* Pods-MYIOSAdsDdcxSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8UR33FSGUM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MYIOSAdsDdcxSDK/MYIOSAdsDdcxSDK-Prefix.pch";
 				INFOPLIST_FILE = "MYIOSAdsDdcxSDK/MYIOSAdsDdcxSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -535,9 +565,11 @@
 			baseConfigurationReference = 7165F29A87314254810A8719 /* Pods-MYIOSAdsDdcxSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8UR33FSGUM;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MYIOSAdsDdcxSDK/MYIOSAdsDdcxSDK-Prefix.pch";
 				INFOPLIST_FILE = "MYIOSAdsDdcxSDK/MYIOSAdsDdcxSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
