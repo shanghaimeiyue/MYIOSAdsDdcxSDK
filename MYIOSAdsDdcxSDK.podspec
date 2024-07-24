@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MYIOSAdsDdcxSDK'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'A short description of MYIOSAdsDdcxSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,8 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '12.0'
   s.static_framework = true
-  s.resources = 'MYIOSAdsDdcxSDK/Resources/*.bundle'
-  s.vendored_frameworks = 'MYIOSAdsDdcxSDK/Frameworks/*.framework'
+  s.resources = 'MYIOSAdsDdcxSDK/Resources/MYAdsBundle.bundle'
+  s.vendored_frameworks = 'MYIOSAdsDdcxSDK/Frameworks/EdiMobSDK.framework','MYIOSAdsDdcxSDK/Frameworks/KSCrash.framework','MYIOSAdsDdcxSDK/Frameworks/MYAdsFramework.framework'
   
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => ['-ObjC' , '-all_load', '-ld64'], 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   
