@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MYIOSAdsDdcxSDK'
-  s.version          = '0.1.5'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of MYIOSAdsDdcxSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -35,8 +35,6 @@ TODO: Add long description of the pod here.
   
   s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => ['-ObjC' , '-all_load', '-ld64'], 'VALID_ARCHS[sdk=iphonesimulator*]' => '' }
   
-  s.dependency 'Ads-Fusion-CN-Beta/BUAdSDK', '6.1.3.4'
-  s.dependency 'Ads-Fusion-CN-Beta/CSJMediation', '6.1.3.4'
   s.dependency 'GDTMobSDK', '4.14.76'
   s.dependency 'KSAdSDK', '3.3.65'
   s.dependency 'WechatOpenSDK_UnPay'
